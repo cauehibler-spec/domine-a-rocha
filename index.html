@@ -1,0 +1,166 @@
+/* ======================= ESTILOS DO RODAPÉ ======================= */
+
+/* --- Variáveis de Cor para Fácil Customização --- */
+:root {
+    --cor-fundo: #121212; /* Preto um pouco mais suave que o #000 */
+    --cor-texto: #E0E0E0; /* Cinza claro para o texto principal */
+    --cor-destaque: #E53935; /* Vermelho vibrante para destaque */
+    --cor-borda: #333333; /* Cinza escuro para divisórias e bordas */
+    --cor-texto-secundario: #A0A0A0; /* Cinza para textos de apoio */
+}
+
+/* --- Estilo Geral do Corpo (Apenas para Exemplo) --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Container Principal do Rodapé --- */
+.site-footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 60px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Seção Superior (Links e Newsletter) --- */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px; /* Espaçamento entre as colunas */
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.footer-brand,
+.footer-links,
+.footer-newsletter {
+    flex: 1;
+    min-width: 220px; /* Garante que as colunas não fiquem muito espremidas */
+}
+
+/* --- Estilos de Títulos e Textos --- */
+.site-footer h3,
+.site-footer h4 {
+    color: var(--cor-destaque);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.site-footer p {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+}
+
+/* --- Listas de Links --- */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--cor-destaque);
+}
+
+/* --- Formulário de Newsletter --- */
+.footer-newsletter input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #252525;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.footer-newsletter input[type="email"]::placeholder {
+    color: var(--cor-texto-secundario);
+}
+
+.footer-newsletter button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-destaque);
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #c62828; /* Um tom de vermelho mais escuro */
+}
+
+/* --- Seção Inferior (Copyright e Redes Sociais) --- */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.copyright-text {
+    color: var(--cor-texto-secundario);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.social-icons a {
+    color: var(--cor-texto);
+    font-size: 1.3rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--cor-destaque);
+}
+
+/* --- Responsividade para Telas Menores (Tablets e Celulares) --- */
+@media (max-width: 768px) {
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+    
+    .social-icons a {
+        margin: 0 15px; /* Ajusta o espaçamento dos ícones */
+    }
+}
