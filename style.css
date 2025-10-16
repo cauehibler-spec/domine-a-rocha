@@ -1,0 +1,1665 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a fonte que você escolheu no HTML */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF6B6B; /* Cor de destaque, como um vermelho/laranja de aventura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+.cta-header {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-header:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('caminho/para/sua/imagem-de-escalada.jpg') no-repeat center center/cover; /* Substitua o caminho */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Escurece um pouco o fundo */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.call-to-action-text {
+    margin-top: 40px !important;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE BÁSICA PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        justify-content: cente/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a fonte que você escolheu no HTML */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF6B6B; /* Cor de destaque, como um vermelho/laranja de aventura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+.cta-header {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-header:hover {
+    background-color: #e65c5c;
+}
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a fonte que você escolheu no HTML */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF6B6B; /* Cor de destaque, como um vermelho/laranja de aventura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+.cta-header {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-header:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('caminho/para/sua/imagem-de-escalada.jpg') no-repeat center center/cover; /* Substitua o caminho */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Escurece um pouco o fundo */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.call-to-action-text {
+    margin-top: 40px !important;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 5%;/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a fonte que você escolheu no HTML */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF6B6B; /* Cor de destaque, como um vermelho/laranja de aventura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+.cta-header {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-header:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('caminho/para/sua/imagem-de-escalada.jpg') no-repeat center center/cover; /* Substitua o caminho */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Escurece um pouco o fundo */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.call-to-action-text {
+    margin-top: 40px !important;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a fonte que você escolheu no HTML */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF6B6B; /* Cor de destaque, como um vermelho/laranja de aventura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+.cta-header {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-header:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('caminho/para/sua/imagem-de-escalada.jpg') no-repeat center center/cover; /* Substitua o caminho */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Escurece um pouco o fundo */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a fonte que você escolheu no HTML */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF6B6B; /* Cor de destaque, como um vermelho/laranja de aventura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+.cta-header {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-header:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('caminho/para/sua/imagem-de-escalada.jpg') no-repeat center center/cover; /* Substitua o caminho */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Escurece um pouco o fundo */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.call-to-action-text {
+    margin-top: 40px !importa/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a fonte que você escolheu no HTML */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #FF6B6B; /* Cor de destaque, como um vermelho/laranja de aventura */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B6B;
+}
+
+.cta-header {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-header:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('caminho/para/sua/imagem-de-escalada.jpg') no-repeat center center/cover; /* Substitua o caminho */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Escurece um pouco o fundo */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.call-to-action-text {
+    margin-top: 40px !important;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE BÁSICA PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .cta-header {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+}nt;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE BÁSICA PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .cta-header {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+}
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.call-to-action-text {
+    margin-top: 40px !important;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE BÁSICA PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .cta-header {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE BÁSICA PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .cta-header {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+}
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE BÁSICA PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .cta-header {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+}
+/* SEÇÃO PRINCIPAL (HERO) */
+.hero {
+    background: url('caminho/para/sua/imagem-de-escalada.jpg') no-repeat center center/cover; /* Substitua o caminho */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Escurece um pouco o fundo */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #FF6B6B;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+/* SEÇÃO DE CONTEÚDO */
+.content-section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-section p {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature-item h3 {
+    color: #FF6B6B;
+    margin-bottom: 10px;
+}
+
+.call-to-action-text {
+    margin-top: 40px !important;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE BÁSICA PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .cta-header {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+}r;
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .cta-header {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+    }
+}
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+  , url('https://thumbs.dreamstime.com/b/montanhista-de-rocha-no-por-do-sol-37512033.jpg?w=992') no-repeat center center/cover;
+  text-align: center;
+  padding: 6rem 2rem;
+  color: #fff;
+}
+/* ======================= ESTILOS DO RODAPÉ ======================= */
+
+/* --- Variáveis de Cor para Fácil Customização --- */
+:root {
+    --cor-fundo: #121212; /* Preto um pouco mais suave que o #000 */
+    --cor-texto: #E0E0E0; /* Cinza claro para o texto principal */
+    --cor-destaque: #E53935; /* Vermelho vibrante para destaque */
+    --cor-borda: #333333; /* Cinza escuro para divisórias e bordas */
+    --cor-texto-secundario: #A0A0A0; /* Cinza para textos de apoio */
+}
+
+/* --- Estilo Geral do Corpo (Apenas para Exemplo) --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Container Principal do Rodapé --- */
+.site-footer {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 60px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Seção Superior (Links e Newsletter) --- */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px; /* Espaçamento entre as colunas */
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.footer-brand,
+.footer-links,
+.footer-newsletter {
+    flex: 1;
+    min-width: 220px; /* Garante que as colunas não fiquem muito espremidas */
+}
+
+/* --- Estilos de Títulos e Textos --- */
+.site-footer h3,
+.site-footer h4 {
+    color: var(--cor-destaque);
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.site-footer p {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+}
+
+/* --- Listas de Links --- */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--cor-destaque);
+}
+
+/* --- Formulário de Newsletter --- */
+.footer-newsletter input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #252525;
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+}
+
+.footer-newsletter input[type="email"]::placeholder {
+    color: var(--cor-texto-secundario);
+}
+
+.footer-newsletter button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--cor-destaque);
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button:hover {
+    background-color: #c62828; /* Um tom de vermelho mais escuro */
+}
+
+/* --- Seção Inferior (Copyright e Redes Sociais) --- */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.copyright-text {
+    color: var(--cor-texto-secundario);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.social-icons a {
+    color: var(--cor-texto);
+    font-size: 1.3rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--cor-destaque);
+}
+
+/* --- Responsividade para Telas Menores (Tablets e Celulares) --- */
+@media (max-width: 768px) {
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        align-items: center;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+    
+    .social-icons a {
+        margin: 0 15px; /* Ajusta o espaçamento dos ícones */
+    }
+}
